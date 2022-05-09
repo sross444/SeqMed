@@ -8,6 +8,7 @@ Created on Tue Apr 12 11:29:32 2022
     Citation to:  Order-free Medicine Combination Prediction With Graph
     Convolutional Reinforcement Learning, 2019
 """
+MIMICIII_FILE_PATH = '/home/...directory to PRESCRIPTIONS / PROCEDURES / DIAGNOSES files...'
 
 import pandas as pd
 import numpy as np
@@ -112,8 +113,7 @@ def filter_300_most_med(med_pd):
 
     return med_pd.reset_index(drop=True)
 
-def process_all(path = '/home/steven/Desktop/school_stuff/deepLearning/'+\
-    'project/mimic-iii-clinical-database-1.4/'):
+def process_all(path = MIMICIII_FILE_PATH):
     med_pd = process_med(path + 'PRESCRIPTIONS.csv')
     med_pd = ndc2atc4(med_pd, path)
     diag_pd = process_diag(path + 'DIAGNOSES_ICD.csv')
