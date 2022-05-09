@@ -22,7 +22,7 @@ The structure of this repository is as follows.
 
 --  Each model has a training_<model_name>.py in this repository that is used to train each model, save it and produce predictions on the held-out test set.  the main.py script simply imports these files, one at a time.  Most deep learning models include a <model_name>.py, which will have pytorch helper function to build each model, and custom code for training.
     
--- It's each to train just one model if you'd prefer!  open up main.py and run the "import <model_name>.py" for that model.  Remember, you'll need to have already run the "munge.py" which provides the required dataloaders.  (And include all the require modules below).
+-- It's easy to train just one model if you'd prefer!  open up main.py and run the "import <model_name>.py" for that model.  Remember, you'll need to have already run the "munge.py" which provides the required dataloaders.  (And include all the require modules below).
 
 REQUIREMENTS:
 numpy
