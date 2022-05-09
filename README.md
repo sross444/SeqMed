@@ -15,3 +15,11 @@ Thanks for viewing my code that replicates the work of S.W. in SeqMed.  You'll b
 4)  Open, or execute main.py.
 
 Now you'll have saved train, test and validation data; along with 10 saved models.  You can explore and load the model for further inference!
+
+REQUIREMENTS:
+numpy
+pytorch
+pandas
+os
+sklearn
+pickle
